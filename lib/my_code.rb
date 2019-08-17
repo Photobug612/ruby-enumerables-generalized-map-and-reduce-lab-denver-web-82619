@@ -18,7 +18,7 @@ def reduce(starting_array, starting_point=nil)
   end
 
     while a < starting_array.length do	 
-    answer = yield(result, starting_array[a])
+    answer = yield(answer, starting_array[a])
 
       a += 1
  end
