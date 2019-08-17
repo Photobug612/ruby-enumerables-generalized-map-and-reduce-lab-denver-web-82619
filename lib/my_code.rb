@@ -8,22 +8,22 @@ def map(array)
   return new
 end
 
-def reduce(source_array, starting_point=nil)
+def reduce(starting_array, starting_point=nil)
   if starting_point
-    i = 0
-    result = starting_point
+    a = 0
+    answer = starting_point
   else
-    i=1
-    result = source_array[0]
+    a=1
+    answer = starting_point[0]
   end
 
-    while i < source_array.length do	 
-    result = yield(result, source_array[i])
+    while a < starting_array.length do	 
+    answer = yield(result, starting_array[a])
 
-      i += 1
+      a += 1
  end
 
-    return result
+    return answer
 end
 
   
