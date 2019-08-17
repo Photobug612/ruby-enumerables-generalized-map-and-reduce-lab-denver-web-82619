@@ -16,13 +16,10 @@ def reduce(array, starting_point=nil)
     a = 1
     answer = array[0]
   end
-
     while a < array.length do	 
     answer = yield(answer, array[a])
-
       a += 1
  end
-
     return answer
 end
 
