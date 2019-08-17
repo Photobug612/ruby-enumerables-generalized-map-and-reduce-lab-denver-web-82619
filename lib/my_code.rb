@@ -8,17 +8,17 @@ def map(array)
   return new
 end
 
-def reduce(source_array, starting_point=nil)
+def reduce(array, starting_point=nil)
   if starting_point
     a = 0
     result = starting_point
   else
     a=1
-    result = source_array[0]
+    result = array[0]
   end
 
-    while a < source_array.length do	 
-    result = yield(result, source_array[a])
+    while a < array.length do	 
+    result = yield(result, array[a])
 
       a += 1
  end
