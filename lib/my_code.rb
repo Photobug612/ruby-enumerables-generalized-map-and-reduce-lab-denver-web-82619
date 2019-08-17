@@ -8,6 +8,7 @@ def map(array)
   return new
 end
 
+
 def reduce(array, starting_point=nil)
   if starting_point
     a = 0
