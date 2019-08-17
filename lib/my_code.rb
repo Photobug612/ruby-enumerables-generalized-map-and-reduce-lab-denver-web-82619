@@ -13,7 +13,7 @@ def reduce(array, starting_point=nil)
     a = 0
     answer = starting_point
   else
-    a=1
+    a = 1
     answer = array[0]
   end
 
