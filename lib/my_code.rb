@@ -11,19 +11,19 @@ end
 def reduce(starting_array, starting_point=nil)
   if starting_point
     i = 0
-    answer = starting_point
+    result = starting_point
   else
     i=1
-    answer = starting_point[0]
+    result = starting_point[0]
   end
 
     while i < starting_array.length do	 
-    answer = yield(answer, starting_array[i])
+    result = yield(result, starting_array[i])
 
       i += 1
  end
 
-    return answer
+    return result
 end
 
   
